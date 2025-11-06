@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "47183256-1b4fd6e9-300c-42de-9e51-d93b74959753",
+		"name": "Business Partner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BusinessPartner Get",
+			"id": "47183256-acca2845-f697-46e1-bbf3-f023606a3eba",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('9980000000')",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"API_BUSINESS_PARTNER",
+						"A_BusinessPartner('9980000000')"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BusinessPartner Create",
+			"id": "47183256-23a82933-9018-47ea-abc1-a2a137dbcda7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "9PcIAWRSPMW79teQZ4v_IA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"BusinessPartner\": \"\",\r\n //  \"AcademicTitle\": \"developer\",\r\n  // \"AuthorizationGroup\": \"string\",\r\n   \"BusinessPartnerCategory\": \"1\",\r\n   \"BusinessPartnerGrouping\": \"BPEE\",\r\n   \"CorrespondenceLanguage\": \"EN\",\r\n   \"FirstName\": \"Manish\",\r\n  // \"FormOfAddress\": \"string\",\r\n   \"Industry\": \"NDBS\",\r\n //  \"InternationalLocationNumber1\": \"string\",\r\n //  \"InternationalLocationNumber2\": \"string\",\r\n   \"IsFemale\": false,\r\n   \"IsMale\": true,\r\n  // \"IsNaturalPerson\": \"Yes\",\r\n   \"IsSexUnknown\": false,\r\n  // \"GenderCodeName\": \"string\",\r\n //  \"Language\": \"string\",\r\n   \"LastName\": \"Kumar\",\r\n  // \"LegalForm\": \"string\",\r\n   \"OrganizationBPName1\": \"NDBS\",\r\n   \"OrganizationBPName2\": \"Adilabad\",\r\n//    \"OrganizationBPName3\": \"string\",\r\n//    \"OrganizationBPName4\": \"string\",\r\n//    \"OrganizationFoundationDate\": \"/Date(1492041600000)/\",\r\n//    \"OrganizationLiquidationDate\": \"/Date(1492041600000)/\",\r\n//    \"SearchTerm1\": \"string\",\r\n//    \"SearchTerm2\": \"string\",\r\n//    \"AdditionalLastName\": \"string\",\r\n//    \"BirthDate\": \"/Date(1492041600000)/\",\r\n//    \"BusinessPartnerBirthDateStatus\": \"string\",\r\n//    \"BusinessPartnerBirthplaceName\": \"string\",\r\n//    \"BusinessPartnerDeathDate\": \"/Date(1492041600000)/\",\r\n//    \"BusinessPartnerIsBlocked\": false,\r\n//   \"BusinessPartnerType\": \"string\",\r\n//    \"GroupBusinessPartnerName1\": \"string\",\r\n//    \"GroupBusinessPartnerName2\": \"string\",\r\n//    \"InternationalLocationNumber3\": \"string\",\r\n   \"MiddleName\": \"M\",\r\n  // \"NameCountry\": \"India\",\r\n//    \"NameFormat\": \"string\",\r\n   \"PersonFullName\": \"Manish.M.Kumar\",\r\n//    \"IsMarkedForArchiving\": true,\r\n//    \"BusinessPartnerIDByExtSystem\": \"string\",\r\n//    \"BusinessPartnerPrintFormat\": \"string\",\r\n//    \"BusinessPartnerOccupation\": \"string\",\r\n//    \"BusPartMaritalStatus\": \"string\",\r\n//    \"BusPartNationality\": \"string\",\r\n//    \"BusinessPartnerBirthName\": \"string\",\r\n//    \"BusinessPartnerSupplementName\": \"string\",\r\n//    \"NaturalPersonEmployerName\": \"string\",\r\n//    \"LastNamePrefix\": \"string\",\r\n//    \"LastNameSecondPrefix\": \"string\",\r\n//    \"Initials\": \"string\",\r\n//    \"BPDataControllerIsNotRequired\": true,\r\n//    \"TradingPartner\": \"string\",\r\n   \"to_AddressIndependentEmail\":  {\r\n      \"results\": [ \r\n         {\r\n            // \"BusinessPartner\": \"string\",\r\n            \"AddressID\": \"09876\",\r\n           // \"Person\": \"string\",\r\n           // \"OrdinalNumber\": \"string\",\r\n            \"EmailAddress\": \"test@gmail.com\",\r\n            \"IsDefaultEmailAddress\": true,\r\n            \"ValidityStartDate\": \"/Date(2025110100000)/\",\r\n            \"ValidityEndDate\": \"/Date(2025110100000)/\"\r\n         }\r\n      ]\r\n   }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"API_BUSINESS_PARTNER",
+						"A_BusinessPartner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Business Partner Update",
+			"id": "47183256-a52d1266-badd-4986-9762-3b4229f09713",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "fupi8xlLsuRZRmYwBKtUqaorELcnYa<EvKncVidV",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "CPI_COM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "x-csrf-token",
+						"value": "9PcIAWRSPMW79teQZ4v_IA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n  // \"BusinessPartner\": \"9980000200\",\r\n //  \"AcademicTitle\": \"developer\",\r\n  // \"AuthorizationGroup\": \"string\",\r\n  // \"BusinessPartnerCategory\": \"1\",\r\n  // \"BusinessPartnerGrouping\": \"BPEE\",\r\n  // \"CorrespondenceLanguage\": \"EN\",\r\n //  \"FirstName\": \"Manish\",\r\n  // \"FormOfAddress\": \"string\",\r\n//   \"Industry\": \"NDBS\",\r\n //  \"InternationalLocationNumber1\": \"string\",\r\n //  \"InternationalLocationNumber2\": \"string\",\r\n //  \"IsFemale\": false,\r\n//   \"IsMale\": true,\r\n  // \"IsNaturalPerson\": \"Yes\",\r\n //  \"IsSexUnknown\": false,\r\n  // \"GenderCodeName\": \"string\",\r\n //  \"Language\": \"string\",\r\n  \"LastName\": \"Mani\",\r\n  // \"LegalForm\": \"string\",\r\n  \"OrganizationBPName1\": \"NDBS\",\r\n   \"OrganizationBPName2\": \"Adilabad\",\r\n    \"OrganizationBPName3\": \"string\",\r\n//    \"OrganizationBPName4\": \"string\",\r\n//    \"OrganizationFoundationDate\": \"/Date(1492041600000)/\",\r\n//    \"OrganizationLiquidationDate\": \"/Date(1492041600000)/\",\r\n//    \"SearchTerm1\": \"string\",\r\n//    \"SearchTerm2\": \"string\",\r\n//    \"AdditionalLastName\": \"string\",\r\n//    \"BirthDate\": \"/Date(1492041600000)/\",\r\n//    \"BusinessPartnerBirthDateStatus\": \"string\",\r\n    \"BusinessPartnerBirthplaceName\": \"Bowenpally\",\r\n//    \"BusinessPartnerDeathDate\": \"/Date(1492041600000)/\",\r\n//    \"BusinessPartnerIsBlocked\": false,\r\n//   \"BusinessPartnerType\": \"string\",\r\n//    \"GroupBusinessPartnerName1\": \"string\",\r\n//    \"GroupBusinessPartnerName2\": \"string\",\r\n//    \"InternationalLocationNumber3\": \"string\",\r\n//   \"MiddleName\": \"M\",\r\n  // \"NameCountry\": \"India\",\r\n//    \"NameFormat\": \"string\",\r\n //  \"PersonFullName\": \"Manish.M.Kumar\",\r\n//    \"IsMarkedForArchiving\": true,\r\n//    \"BusinessPartnerIDByExtSystem\": \"string\",\r\n//    \"BusinessPartnerPrintFormat\": \"string\",\r\n//    \"BusinessPartnerOccupation\": \"string\",\r\n//    \"BusPartMaritalStatus\": \"string\",\r\n//    \"BusPartNationality\": \"string\",\r\n    \"BusinessPartnerBirthName\": \"HYDERABAD\"\r\n//    \"BusinessPartnerSupplementName\": \"string\",\r\n//    \"NaturalPersonEmployerName\": \"string\",\r\n//    \"LastNamePrefix\": \"string\",\r\n//    \"LastNameSecondPrefix\": \"string\",\r\n//    \"Initials\": \"string\",\r\n//    \"BPDataControllerIsNotRequired\": true,\r\n//    \"TradingPartner\": \"string\",\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://my419475-api.s4hana.cloud.sap/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_BusinessPartner('9980000200')",
+					"protocol": "https",
+					"host": [
+						"my419475-api",
+						"s4hana",
+						"cloud",
+						"sap"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"API_BUSINESS_PARTNER",
+						"A_BusinessPartner('9980000200')"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
